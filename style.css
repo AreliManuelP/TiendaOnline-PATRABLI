@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;1,500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /* background-color: rgb(149, 159, 250); */
+    width: 100%;
+    align-items: center;
+    /* Anclar el encabezado */
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Posiciona el encabezado en la parte superior */
+    left: 0; /* Alinea el encabezado al lado izquierdo */
+    background-color: white; /* Fondo blanco */
+}
+
+/* Estilo para las categorías */
+.categorias {
+    padding: 20px; /* Espaciado interno para las categorías */
+    background-color: white; 
+    margin-top: 80px; /* Añade un margen superior para que el contenido no esté oculto bajo el encabezado */ 
+}
+
+img{
+    width: 100px;
+}
+
+header ul{
+    /* quita los puntos de las viñetas */
+    list-style: none;
+    /* lo pone flexible en linea */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 15px;
+}
+/* Hace una separacion entre las palabras */
+header ul li{
+    margin: 10px;
+}
+
+header ul li img{
+    width: 35px;
+}
+
+/* las imagen y texto de perfil y ordenar arriba y abajo */
+header nav ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen y el texto */
+    text-align: center;
+}
+/* quitar lo surbrayado de a  */
+a{
+    text-decoration: none;
+    color: rgb(221, 106, 236);
+}
+
+
+header nav ul li form {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header nav ul li input {
+    color: #a024b1; /* Color del texto del placeholder */
+}
+
+#tituloP{
+    font-family: "Pacifico", cursive;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+}
+/*  */
+.container {
+    /* Activa Flexbox para que sea flexible y pueda centarce*/
+    display: flex;  
+}
+
+.dise1{
+    width: 800px; 
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+/*  */
+/* CATEGORIAS  */
+
+/* .categorias{
+    background-color: rgb(250, 149, 241);
+    
+} */
+
+/* Hace una separacion entre las palabras */
+.categoriast li{
+    margin: 10px;
+}
+.categorias h1{
+    text-align: center;
+
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 20px;
+}
+.categoriast a{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 18px;
+}
+
+nav ul.categoriast {
+    /* Elimina los puntos de la lista */
+    list-style-type: none; 
+    /* Alinea los elementos horizontalmente */
+    display: flex; 
+    /* Distribuye espacio uniformemente entre los elementos */
+    justify-content: space-around; 
+    padding: 0;
+    margin: 0;
+   
+}
+
+nav ul.categoriast li {
+    /* Espaciado interno */
+    padding: 10px 20px; 
+    /* Tamaño del texto */
+    font-size: 16px; 
+    /* Hace que el cursor cambie a mano de seleccionar al pasar sobre los elementos */
+    /* cursor: pointer;  */
+}
+
+nav ul.categoriast li:hover {
+    /* Cambia el color de fondo al pasar el cursor */
+    background-color: #F6D0CA; 
+    /* Redondea las esquinas al hacer hover */
+    border-radius: 5px; 
+}
+p{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+/*  */
+.image-row {
+    /* Coloca las imágenes en una fila */
+    display: flex; 
+    /* Espacio alrededor de las imágenes */
+    justify-content: space-around; 
+    /* Alinea las imágenes verticalmente */
+    align-items: center; 
+    gap: 10px; /* Espacio entre las imágenes */
+}
+
+.image-row img {
+    /* Cada imagen ocupa el 30% del ancho del contenedor */
+    width: 30%; 
+    /* Mantiene la proporción original de la imagen */
+    height: auto; 
+    /* Opcional: esquinas redondeadas */
+    border-radius: 5px; 
+}
+
+/*  */
+/*  */
+#papeleria, #accesorios, #hogar, #belleza, #otros{
+    text-align: center;
+    font-size: 50px;
+
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+
+
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cajas se ajusten en varias filas */
+    justify-content: space-between; /* Distribuye el espacio entre las cajas */
+}
+
+.box {
+    width: 30%; /* Ajusta para 4 cajas en una fila, considerando margen entre ellas */
+    margin-bottom: 20px; /* Espacio entre las filas */
+    text-align: center; /* Centra el texto y la imagen */
+    border: 1px solid #ccc; /* Opcional: bordes para las cajas */
+    padding: 10px; /* Opcional: espacio dentro de las cajas */
+    box-sizing: border-box; /* Asegura que padding y borde no afecten el ancho */
+}
+
+.box img {
+    width: 80%; /* La imagen ocupa el 100% del ancho de la caja */
+    height: auto; /* Mantiene la proporción original de la imagen */
+}
+
+.box p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 16px; /* Tamaño del texto */
+}
+
+/* boton ver mas */
+.container {
+    display: flex;
+    /* Centra el contenido horizontalmente */
+    justify-content: center; 
+        
+   
+}
+/* Estilos para el botón */
+.btn-ver-mas {
+    background-color: #caa9c6; /* Color de fondo */
+    color: #000000;               /* Color de texto */
+    padding: 12px 24px;        /* Espaciado interno */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    font-size: 16px;           /* Tamaño de fuente */
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición de color */
+}
+
+.btn-ver-mas:hover  {
+    background-color: #632968; /* Color de fondo al pasar el ratón */
+}
+#agregar, .btn-agregar{
+    background-color: #ee95d0; /* Color de fondo */
+    color: #000000;               /* Color de texto */
+    padding: 12px 24px;        /* Espaciado interno */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    font-size: 16px;           /* Tamaño de fuente */
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición de color */
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #f2f2f2; /* Fondo opcional */
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1 1 20%; /* Ocupa un 20% del ancho disponible */
+    margin: 10px;
+    min-width: 200px; /* Ancho mínimo para mejor adaptabilidad */
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+footer img#icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+#mex {
+    width: 20px; /* Ajusta el tamaño de la bandera */
+    height: auto; /* Mantiene la proporción de la imagen */
+    vertical-align: middle; /* Alineación vertical en el centro */
+    margin-left: 5px; /* Espacio entre el texto y la bandera */
+}
+
+
+
+
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 1 1 100%; /* Cambia a una sola columna en pantallas pequeñas */
+        text-align: center;
+    }
+
+}

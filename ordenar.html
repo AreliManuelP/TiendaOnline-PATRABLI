@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar</title>
+    <link rel="stylesheet" href="styorden.css">
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <ul id="listaProductos"></ul>
+    <button id="enviarEmail">Enviar Orden</button>
+    <a href="index.html"><button id="volver">Regresar</button>
+    <p id="mensajeProductos"></p></a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="ordenar.js"></script>
+    <script>emailjs.init('ezkyEeEeV-var2tZe');</script>
+</body>
+</html>
